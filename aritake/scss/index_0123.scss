@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+.index{
+    .text{
+        font-size: 100px;
+        font-weight: bold;
+    }
+}
+
+.hover {
+	display: inline;
+	color: #222;
+	cursor: pointer;
+	transition: all 1.5s ease 0s;
+    font-size: 100px;
+    font-weight: bold;
+    //background: #f0a2a2;
+}
+.hover:hover {
+	color: #22222230;
+    transition: all 0.3s ease 0s;
+}
+
+.hover2 {
+	display: table;
+	color: #222;
+	cursor: pointer;
+	transition: all 1.5s ease 0s;
+    font-size: 100px;
+    font-weight: bold;
+    //background: #f0a2a2;
+
+    
+}
+.hover2:hover {
+	color: #22222230;
+    transition: all 0.3s ease 0s;
+}
+.hover2:hover span:nth-child(1){
+    transition-delay: 0.2s;
+}
+
+.hover2:hover span:nth-child(2){
+    transition-delay: 0s;
+}
+
+.hover2:hover span:nth-child(3){
+    transition-delay: 0.4s;
+}
+
+.hover2:hover span:nth-child(4){
+    transition-delay: 0.1s;
+}
+
+.hover2:hover span:nth-child(5){
+    transition-delay: 0.3s;
+}
+
+.hover2:hover span:nth-child(6){
+    transition-delay: 0.6s;
+}
+
+
+.hover3 {
+	display: table;
+	color: #222;
+	cursor: pointer;
+	//transition: all 1.5s ease 0s;
+    font-size: 100px;
+    font-weight: bold;
+    //background: #f0a2a2;
+
+    span:nth-child(1){
+        transition: all 0.2s ease 0s;
+    }
+    span:nth-child(2){
+        transition: all 0.6s ease 0s;
+    }
+    span:nth-child(3){
+        transition: all 0.4s ease 0s;
+    }
+    span:nth-child(4){
+        transition: all 0.5s ease 0s;
+    }
+    span:nth-child(5){
+        transition: all 0.6s ease 0s;
+    }
+    span:nth-child(6){
+        transition: all 0.1s ease 0s;
+    }
+
+    
+}
+.hover3:hover {
+	color: #22222230;
+    transition: all 0.3s ease 0s;
+}

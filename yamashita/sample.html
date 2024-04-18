@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サンプル</title>
+</head>
+<style>
+  .wrap {
+    width: 778px;
+    margin: 20px auto 0;
+  }
+</style>
+<body>
+
+  <div class="wrap">
+    <h2>構成比</h2>
+    <canvas id="chart_a"></canvas>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <script>
+    const ctx = document.getElementById('chart_a');
+  
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['全体', '30代', '40代', '50代', '60代'],
+        datasets: [
+          {
+            label: '使用している',
+            data: [18, 21, 19, 17, 21],
+            borderWidth: 1,
+            backgroundColor: '#77BBEE',
+            // barThickness: 15,
+            barPercentage: 0.35,
+            categoryPercentage: 1,
+            
+            // maxBarThickness: 8,
+          },
+          {
+            label: '使用を検討中',
+            data: [28, 25, 27, 27, 35],
+            borderWidth: 1,
+            backgroundColor: '#AADDFF',
+            // barThickness: 15,
+            barPercentage: 0.35,
+            categoryPercentage: 1,
+            
+            // maxBarThickness: 8,
+          },
+          {
+            label: '使用していない（使う予定もない）',
+            data: [54, 54, 54, 56, 44],
+            borderWidth: 1,
+            backgroundColor: '#E0F3FF',
+            // barThickness: 15,
+            barPercentage: 0.35,
+            categoryPercentage: 1,
+            
+            // maxBarThickness: 8,
+          },
+        ]
+      },
+      options: {
+        indexAxis: 'y',
+        scales: {
+          x: {
+              stacked: true,
+          },
+          y: {
+              stacked: true
+          },
+        },
+        plugins:{
+          legend:{
+            display: false,
+          }
+        }
+      }
+    });
+  </script>
+
+
+</body>
+</html>
